@@ -126,7 +126,7 @@ if __name__ == '__main__':
         data.append(row)
 
 #------------------------------------------------------------------------------ export data
-    data.export('sencanada')
+    data.export('sencanada.csv')
     print('done')
 
 
