@@ -35,5 +35,5 @@ class Data:
     def export(self, filename: str) -> None:
         if not os.path.exists("./csv"):
             os.mkdir("csv")
-        self.dataframe.to_csv("./csv"+filename)
+        self.dataframe.to_csv("./csv/"+filename)
          
