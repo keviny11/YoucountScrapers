@@ -30,10 +30,10 @@ class Data:
     dataframe = pd.DataFrame(columns=columns)
 
     def append(self, row: Row) -> None:
-        self.dataframe.loc[self.dataframe.shape[0]] = row
+        self.dataframe.loc[self.dataframe.shape[0]] = row.data
 
     def export(self, filename: str) -> None:
         if not os.path.exists("./csv"):
             os.mkdir("csv")
         self.dataframe.to_csv("./csv"+filename)
-        
+         
