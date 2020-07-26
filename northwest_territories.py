@@ -1,5 +1,5 @@
 # Northwest territories representatives
-# TODO: decode of special characters
+# TODO: Paulie Chinna, missing
 from bs4 import BeautifulSoup
 import pandas as pd
 from format import Row, Data
