@@ -39,14 +39,14 @@ baseURL = "https://www.ntassembly.ca"
 
 results = Data()
 
-baseHTML = str(requests.get(baseURL+"/members").content)
+baseHTML = requests.get(baseURL+"/members").content.decode("utf-8")
 soup = BeautifulSoup(baseHTML, "html.parser")
 
 reps = soup.find_all("td", {"class": re.compile(r"views-row-members")})
 
 for rep in reps:
     url = baseURL + str(rep.find("a", {"href": re.compile("meet-members")})["href"])
-    personal_page = BeautifulSoup(str(requests.get(url).content), "html.parser")
+    personal_page = BeautifulSoup(requests.get(url).content.decode("utf-8"), "html.parser")
     name = personal_page.find("h1", {"id": "page-title"}).text
     phone = re.findall(r"[0-9]{3}-[0-9]{3}-[0-9]{4}", str(requests.get(url).content))
 
