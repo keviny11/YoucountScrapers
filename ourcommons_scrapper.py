@@ -95,13 +95,14 @@ if __name__ == '__main__':
         address = None
 
 #--------------------------------------------------- parser
-        photo_url = lst[0]
+        photo_url = 'https://www.ourcommons.ca' + lst[0]
         party = lst[1]
         Province = lst[3]
         Email = lst[4]
         address = lst[5]
         Telephone = lst[6]
         name = lst[-1]
+        name = name.replace('The Honourable ','')
         first_name = name.split(' ')[0]
         last_name = ' '.join(name.split(' ')[1:])
         if lst[7] != '':
@@ -110,6 +111,8 @@ if __name__ == '__main__':
 # --------------------------------------------------------------------------- test print
         print('------------------------------------------------------------')
         print('name', ":  ", name)
+
+
         print('first_name', ":  ", first_name)
         print('last_name', ":  ", last_name)
         print('Province: ', Province)
