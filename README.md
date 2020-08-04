@@ -10,5 +10,7 @@ pip install -r requirements.txt
 
 Todos:
 ```
-1. All MPs on: https://www.ourcommons.ca/Members/en/search
+All councillors and mayor:
+1. Ottawa: https://ottawa.ca/en/city-hall/mayor-and-city-councillors
+2. Edmonton: https://www.edmonton.ca/city_government/city_organization/city-councillors.aspx
 ```
