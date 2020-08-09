@@ -1,4 +1,6 @@
 .DS_Store
+.idea/
+.vscode/
 env/
 csv/
 __pycache__/
