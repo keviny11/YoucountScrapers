@@ -79,7 +79,7 @@ if __name__ == '__main__':
         twitter = None
         linkedin = None
         youtube = None
-
+        address = None
 #--------------------------------------------------- parser
         name = lst[-3]
         first_name = name.split(' ')[0].strip()
@@ -121,7 +121,7 @@ if __name__ == '__main__':
         row = Row( Province, 'Senate', 'Senate', None, None,\
         None, None, 'Senator', None, bio, name, first_name, last_name,\
         None, None, Email, photo_url, source_url, Website, facebook, instagram, twitter, linkedin,\
-        youtube, None, None, Telephone, Fax)
+        youtube, None, address, Telephone, Fax)
 
         data.append(row)
 
