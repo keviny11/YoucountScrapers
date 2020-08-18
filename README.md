@@ -12,4 +12,5 @@ Todos:
 ```
 All councillors and mayor:
 (Assigned to Kevin) 1. Ottawa: https://ottawa.ca/en/city-hall/mayor-and-city-councillors
+2. Regina: https://www.regina.ca/city-government/city-council/
 ```
